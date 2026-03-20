@@ -1,70 +1,85 @@
 body {
   margin: 0;
-  font-family: Arial, sans-serif;
+  font-family: 'Inter', sans-serif;
   background: white;
   color: #111;
 }
+
+/* HEADER */
 
 header {
   display: flex;
   justify-content: space-between;
-  padding: 20px;
-  position: sticky;
-  top: 0;
-  background: white;
+  padding: 25px 40px;
+  font-size: 14px;
   border-bottom: 1px solid #eee;
 }
 
+.logo {
+  font-weight: 400;
+}
+
 nav a {
-  margin-left: 15px;
+  margin-left: 25px;
   text-decoration: none;
   color: #111;
 }
 
-.galeria {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-  gap: 10px;
-  padding: 20px;
+/* HERO */
+
+.hero img {
+  width: 100%;
+  height: 85vh;
+  object-fit: cover;
 }
 
-.galeria img {
+/* GALERÍA */
+
+.galeria {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 2px;
+}
+
+.obra {
+  position: relative;
+}
+
+.obra img {
   width: 100%;
-  cursor: pointer;
+  display: block;
+}
+
+/* info aparece al hover (tipo galería pro) */
+
+.info {
+  position: absolute;
+  bottom: 10px;
+  left: 10px;
+  font-size: 12px;
+  background: rgba(255,255,255,0.8);
+  padding: 4px 6px;
+  opacity: 0;
   transition: 0.3s;
 }
 
-.galeria img:hover {
-  opacity: 0.8;
+.obra:hover .info {
+  opacity: 1;
 }
 
-.bio, .contacto {
-  padding: 40px 20px;
+/* BIO */
+
+.bio {
   max-width: 700px;
-  margin: auto;
+  margin: 100px auto;
+  padding: 0 20px;
+  line-height: 1.6;
 }
 
-.lightbox {
-  display: none;
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background: rgba(255,255,255,0.95);
-  justify-content: center;
-  align-items: center;
-}
+/* CONTACTO */
 
-.lightbox img {
-  max-width: 90%;
-  max-height: 90%;
-}
-
-#cerrar {
-  position: absolute;
-  top: 20px;
-  right: 30px;
-  font-size: 30px;
-  cursor: pointer;
+.contacto {
+  text-align: center;
+  padding: 60px 20px;
+  font-size: 14px;
 }
