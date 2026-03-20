@@ -3,6 +3,9 @@ body {
   font-family: 'Inter', sans-serif;
   background: white;
   color: #111;
+  font-size: 14px;
+  letter-spacing: 0.02em;
+}
 }
 
 /* HEADER */
@@ -17,6 +20,9 @@ header {
 
 .logo {
   font-weight: 400;
+  font-size: 14px;
+  letter-spacing: 0.1em;
+}
 }
 
 nav a {
@@ -29,16 +35,15 @@ nav a {
 
 .hero img {
   width: 100%;
-  height: 85vh;
+  height: 92vh;
   object-fit: cover;
 }
 
 /* GALERÍA */
 
 .galeria {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap: 2px;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1px;
 }
 
 .obra {
@@ -48,6 +53,11 @@ nav a {
 .obra img {
   width: 100%;
   display: block;
+  transition: 0.4s;
+}
+
+.obra:hover img {
+  opacity: 0.92;
 }
 
 /* info aparece al hover (tipo galería pro) */
