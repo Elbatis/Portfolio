@@ -2,65 +2,45 @@
 <html lang="es">
 <head>
   <meta charset="UTF-8">
-  <title>Marco Pinta</title>
+  <title>Tu Nombre - Portfolio</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-  <!-- tipografía elegante -->
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400&display=swap" rel="stylesheet">
-
   <link rel="stylesheet" href="styles.css">
 </head>
-
 <body>
 
 <header>
-  <div class="logo">Marco Pinta</div>
+  <h1>Tu Nombre</h1>
   <nav>
-    <a href="#">Works</a>
+    <a href="#galeria">Galería</a>
     <a href="#bio">Bio</a>
-    <a href="#contacto">Contact</a>
+    <a href="#contacto">Contacto</a>
   </nav>
 </header>
 
-<!-- HERO (imagen grande como Pace) -->
-<section class="hero">
-  <img src="images/obra1.jpg" alt="">
+<section id="galeria" class="galeria">
+  <img src="images/obra1.jpg" alt="Obra 1">
+  <img src="images/obra2.jpg" alt="Obra 2">
+  <img src="images/obra3.jpg" alt="Obra 3">
 </section>
 
-<!-- GALERÍA -->
-<section class="galeria">
-
-  <div class="obra">
-    <img src="images/obra1.jpg">
-    <div class="info">Título obra, 2024</div>
-  </div>
-
-  <div class="obra">
-    <img src="images/obra2.jpg">
-    <div class="info">Título obra, 2024</div>
-  </div>
-
-  <div class="obra">
-    <img src="images/obra3.jpg">
-    <div class="info">Título obra, 2024</div>
-  </div>
-
-</section>
-
-<!-- BIO -->
 <section id="bio" class="bio">
   <h2>Bio</h2>
   <p>
-    Escribí acá tu statement. Texto más curatorial, tipo galería.
-    No CV seco — pensalo como narrativa.
+    Escribí acá tu texto artístico, statement, procesos, etc.
   </p>
 </section>
 
-<!-- CONTACTO -->
 <section id="contacto" class="contacto">
+  <h2>Contacto</h2>
   <p>Email: tunombre@email.com</p>
   <p>Instagram: @tuusuario</p>
 </section>
 
+<div id="lightbox" class="lightbox">
+  <span id="cerrar">&times;</span>
+  <img id="img-grande">
+</div>
+
+<script src="script.js"></script>
 </body>
 </html>
